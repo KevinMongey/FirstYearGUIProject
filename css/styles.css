@@ -20,7 +20,7 @@ p {
   font-size: 20px;
 }
 
-button {
+button { /* Button styling */
   color: #E94E2E;
   border: none;
   padding: 10px 20px;
@@ -46,7 +46,8 @@ nav ol {
   margin: 0;
   padding: 0;
   display: flex; /* Align items horizontally */
-  justify-content: center; /* Center the items */
+  justify-content: center; /* Centering */
+  list-style-type: none; /* Removes the numbers*/
 }
 
 nav ol li {
@@ -57,19 +58,19 @@ nav ol li a {
   color: white; /* Text color */
   text-decoration: none; /* Remove underline */
   padding: 10px 15px; /* Padding around the text */
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 nav ol li a:hover {
-  background-color: #E94E2E; /* Red-orange background on hover */
+  background-color: #E94E2E; /* Tomato colour background on hover */
   color: white; /* White text on hover */
 }
 
 nav ol li a:active {
-  background-color: #B04A3A; /* Darker background when clicked */
+  background-color: #B04A3A;
 }
 
