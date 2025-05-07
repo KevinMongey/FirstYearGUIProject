@@ -1,4 +1,4 @@
-<!-- styles -->
+/*CSS styles for html pages*/
 
 body {
   text-align: center;
@@ -35,7 +35,12 @@ button:hover {
   color: black;
 }
 
-/* Navbar styles */
+/*navbar styles*/
+nav {
+  background-color: #A3B18A; /* Soft olive green background */
+  padding: 10px 0; /* Padding around the navbar */
+  margin-bottom: 20px; /* Space between navbar and heading */
+}
 nav ol {
   margin: 0;
   padding: 0;
@@ -50,3 +55,4 @@ nav ol li {
 nav ol li a {
   color: black;
 }
+
