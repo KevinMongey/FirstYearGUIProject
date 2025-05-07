@@ -40,7 +40,7 @@ function saveForm() {
 //load recipies on button press to refresh. Also refreshes if more refreshes added
 function loadRecipies() {
     let recipes = JSON.parse(localStorage.getItem('recipes')) || [];
-    let container = document.getElementById('recipe_div');
+    let container = document.getElementById('recipe-div');
 
     //clears content on refresh
     container.innerHTML = "";
@@ -53,7 +53,7 @@ function loadRecipies() {
     //for loop to create a card for each recipe
     recipes.forEach(recipe => {
         let card = document.createElement('div');
-        card.className = 'recipeCard';
+        card.className = 'recipe-card';
         //formatting for the recipe cards
         card.innerHTML = `
         <img src="${recipe.image || 'images/default.jpg'}" alt="${recipe.title}" />

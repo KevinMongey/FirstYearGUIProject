@@ -73,3 +73,23 @@ nav ol li a:hover{
 nav ol li a:active{
   background-color: #B04A3A;
 }
+
+/*For layout of cards*/
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+}
