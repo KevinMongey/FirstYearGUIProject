@@ -1,6 +1,6 @@
-/*CSS styles for html pages*/
+/*CSS styles for the html pages*/
 
-body {
+body{
   text-align: center;
   font-family: Arial, sans-serif;
   background-color: #FAF4E5;
@@ -8,69 +8,68 @@ body {
   padding: 0;
 }
 
-h1 {
+h1{
   color: #A3B18A;
   text-align: center;
   font-size: 40px;
 }
 
-p {
+p{
   color: #555555;
-  padding: 10px;
+  padding: 12px;
   font-size: 20px;
 }
 
 button { /* Button styling */
   color: #E94E2E;
   border: none;
-  padding: 10px 20px;
-  font-size: 10px;
+  padding: 12px 20px;
+  font-size: 12px;
   cursor: pointer;
   background-color: black;
   border-radius: 5px;
 }
 
-button:hover {
+button:hover{
   background-color: #E94E2E;
   color: black;
 }
 
-/*navbar styles*/
-/* Navbar styles */
-nav {
-  background-color: #A3B18A; /* Olive green background for navbar */
-  padding: 10px 0; /* Padding around the navbar */
+/* Styles for the  Navbar */
+nav{
+  background-color: #A3B18A; 
+  padding: 10px 0;
 }
 
-nav ol {
+nav ol{
   margin: 0;
   padding: 0;
   display: flex; /* Align items horizontally */
-  justify-content: center; /* Centering */
-  list-style-type: none; /* Removes the numbers*/
+  justify-content: center;
+  list-style-type: none; /* Gets rid of the numbers that come with an ordered list*/
 }
 
-nav ol li {
-  margin: 0 20px; /* Space between items */
+nav ol li{
+  margin: 0 20px; 
 }
 
-nav ol li a {
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 15px; /* Padding around the text */
+nav ol li a{
+  color: white;
+  text-decoration: none; /* Removes the underline */
+  padding: 15px 15px; 
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s, color 0.3s; 
+  transition: background-color 0.4s, color 0.4s; 
 }
 
-nav ol li a:hover {
+nav ol li a:hover{
   background-color: #E94E2E; /* Tomato colour background on hover */
-  color: white; /* White text on hover */
+  
+  color: white; /* Changes text colour to white when hovering over */
 }
 
-nav ol li a:active {
+nav ol li a:active{
   background-color: #B04A3A;
 }
-
