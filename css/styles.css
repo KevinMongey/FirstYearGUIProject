@@ -26,13 +26,13 @@ button { /* Button styling */
   padding: 12px 20px;
   font-size: 12px;
   cursor: pointer;
-  background-color: black;
+  background-color: white;
   border-radius: 5px;
 }
 
 button:hover{
   background-color: #E94E2E;
-  color: black;
+  color: white;
 }
 
 /* Styles for the  Navbar */
@@ -66,7 +66,7 @@ nav ol li a{
 
 nav ol li a:hover{
   background-color: #E94E2E; /* Tomato colour background on hover */
-  
+
   color: white; /* Changes text colour to white when hovering over */
 }
 
