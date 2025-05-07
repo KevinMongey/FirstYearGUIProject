@@ -36,23 +36,40 @@ button:hover {
 }
 
 /*navbar styles*/
+/* Navbar styles */
 nav {
-  background-color: #A3B18A; /* Soft olive green background */
+  background-color: #A3B18A; /* Olive green background for navbar */
   padding: 10px 0; /* Padding around the navbar */
-  margin-bottom: 20px; /* Space between navbar and heading */
 }
+
 nav ol {
   margin: 0;
   padding: 0;
-  display: flex; 
-  justify-content: center;
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center the items */
 }
 
 nav ol li {
-  margin: 0 10px;
+  margin: 0 20px; /* Space between items */
 }
 
 nav ol li a {
-  color: black;
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding around the text */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+}
+
+nav ol li a:hover {
+  background-color: #E94E2E; /* Red-orange background on hover */
+  color: white; /* White text on hover */
+}
+
+nav ol li a:active {
+  background-color: #B04A3A; /* Darker background when clicked */
 }
 
