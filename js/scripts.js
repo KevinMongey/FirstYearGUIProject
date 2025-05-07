@@ -35,7 +35,7 @@ function saveForm() {
     //send the updated array back to the localStorage
     localStorage.setItem("recipes", JSON.stringify(recipes));
 
-    alert("Recipe Saved!");
+    alert('Recipe Added!');
 };
 
 function loadRecipes() {
