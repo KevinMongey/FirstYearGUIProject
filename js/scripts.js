@@ -11,6 +11,12 @@ function saveForm() {
     let time = document.getElementById('time').value;
     let image = document.getElementById('image').value;
 
+    //check to see if every field is filled in
+    if (!title || !ingredients || !steps || !cuisine || !difficulty || !time || !image) {
+        alert("Please fill in all fields before saving the recipe.");
+        return;
+    }
+
     //making recipe object
     let recipe = {
         title: title,
@@ -28,4 +34,6 @@ function saveForm() {
 
     //send the updated array back to the localStorage
     localStorage.setItem("recipes", JSON.stringify(recipes));
+
+    alert("Recipe Saved!");
 };
