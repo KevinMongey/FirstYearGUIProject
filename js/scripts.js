@@ -59,6 +59,12 @@ function loadRecipies() {
         <img src="${recipe.image || 'images/default.jpg'}" alt="${recipe.title}" />
         <h2>${recipe.title}</h2>
         <p><strong>Cook Time:</strong> ${recipe.time} min</p>
+        <p><strong>Cuisine:</strong> ${recipe.cuisine || 'N/A'}</p>
+        <p><strong>Difficulty:</strong> ${recipe.difficulty || 'N/A'}</p>
+        <h3>Ingredients:</h3>
+        <p>${recipe.ingredients.replace(/\n/g, '<br>')}</p>
+        <h3>Method:</h3>
+        <p>${recipe.steps.replace(/\n/g, '<br>')}</p>
     `;
 
     container.appendChild(card); //append card
