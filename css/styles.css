@@ -1,29 +1,31 @@
-/* Basic Styles */
+<!--Basic Styles -->
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: ;
     margin: 0;
     padding: 0;
   }
   
   h1 {
-    color: black;
+    color: #A3B18A;
     text-align: center;
+    font-size: 20px;
   }
   
   p {
-    color: black;
+    color: #555555;
     padding: 10px;
+    font-size: 20px;
   }
   
   button {
-    color: black;
+    color: #E94E2E;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
   }
   
   button:hover {
-    background-color: black;
+    background-color: #E94E2E;
   }
   
