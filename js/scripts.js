@@ -37,8 +37,8 @@ function saveForm() {
 
     alert("Recipe Saved!");
 };
-//load recipies on button press to refresh. Also refreshes if more refreshes added
-function loadRecipies() {
+
+function loadRecipes() {
     let recipes = JSON.parse(localStorage.getItem('recipes')) || [];
     let container = document.getElementById('recipe-div');
 
@@ -54,6 +54,7 @@ function loadRecipies() {
     recipes.forEach(recipe => {
         let card = document.createElement('div');
         card.className = 'recipe-card';
+        card.setAttribute('data-title', recipe.title); 
         //formatting for the recipe cards
         card.innerHTML = `
         <img src="${recipe.image || 'images/default.jpg'}" alt="${recipe.title}" />
@@ -68,19 +69,25 @@ function loadRecipies() {
     `;
 
     container.appendChild(card); //append card
+
     });
 };
 
-window.addEventListener('DOMContentLoaded', loadRecipies);
+window.addEventListener('DOMContentLoaded', () => {
+    loadRecipes(); //load recipes on page load
 
-// FOR SEARCH BAR IN browse.html
-const searchInput = document.querySelector("[data-search]")
-//constantly scan for inputs in search similar to the "live calculator" we made in class
-searchInput.addEventListener("input", (e) => {
-    const value = e.target.value.toLowerCase();
-    //for loop to check if name matches input
-    recipes.forEach(recipe => {
-        let isMatch = recipe.name.toLowerCase().includes(value)
-        recipe.classList.toggle("hide", !isMatch)
-    })
+    //listens for changes in the search input
+    document.querySelector("[data-search]").addEventListener("input", (e) => {
+        const value = e.target.value.toLowerCase();
+        const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+
+        //checks cards exits before filter
+        document.querySelectorAll('.recipe-card').forEach(card => {
+            const title = card.getAttribute('data-title').toLowerCase();
+            const isMatch = title.includes(value); //chekcing for matches
+            card.classList.toggle("hide", !isMatch);
+        });
+    });
 });
+
+

@@ -93,3 +93,8 @@ nav ol li a:active{
 .recipe-card:hover {
   transform: scale(1.02);
 }
+
+/*hide cards during search filtering */
+.hide {
+  display: none;
+}
