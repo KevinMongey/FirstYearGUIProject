@@ -24,7 +24,7 @@ button {
   color: #E94E2E;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 10px;
   cursor: pointer;
   background-color: black;
   border-radius: 5px;
@@ -32,5 +32,21 @@ button {
 
 button:hover {
   background-color: #E94E2E;
+  color: black;
+}
+
+/* Navbar styles */
+nav ol {
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center;
+}
+
+nav ol li {
+  margin: 0 10px;
+}
+
+nav ol li a {
   color: black;
 }
