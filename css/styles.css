@@ -1,7 +1,8 @@
-<!--Basic Styles -->
+
 body {
+    text-align: center;
     font-family: Arial, sans-serif;
-    background-color: ;
+    background-color: #FAF4E5;
     margin: 0;
     padding: 0;
   }
