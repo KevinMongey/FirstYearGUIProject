@@ -12,12 +12,14 @@ h1{
   color: #A3B18A;
   text-align: center;
   font-size: 40px;
+  font-family: Arial, sans-serif;
 }
 
 p{
   color: #555555;
   padding: 6px;
   font-size: 20px;
+  font-family: Arial, sans-serif;
 }
 
 button { /* Button styling */
@@ -28,6 +30,7 @@ button { /* Button styling */
   cursor: pointer;
   background-color: white;
   border-radius: 2px;
+  font-family: Arial, sans-serif;
 }
 
 button:hover{
