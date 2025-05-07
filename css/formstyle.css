@@ -1,4 +1,14 @@
-textarea{
-    width: 1000%;
-    height: 1000%;
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+  width: 120%; 
+  font-size: 16px;
+  padding: 12px;
+}
+
+textarea {
+  height: 80px;
+  
+  resize: vertical;
 }
