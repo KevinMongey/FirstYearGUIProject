@@ -37,3 +37,32 @@ function saveForm() {
 
     alert("Recipe Saved!");
 };
+//load recipies on button press to refresh. Also refreshes if more refreshes added
+function loadRecipies() {
+    let recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+    let container = document.getElementById('recipe_div');
+
+    //clears content on refresh
+    container.innerHTML = "";
+
+    //case for when no recipies are in local storage
+    if(recipes.length === 0) {
+        container.innerHTML = "<p>No recipies added yet.</p>"
+        return;
+    }
+    //for loop to create a card for each recipe
+    recipes.forEach(recipe => {
+        let card = document.createElement('div');
+        card.className = 'recipeCard';
+        //formatting for the recipe cards
+        card.innerHTML = `
+        <img src="${recipe.image || 'images/default.jpg'}" alt="${recipe.title}" />
+        <h2>${recipe.title}</h2>
+        <p><strong>Cook Time:</strong> ${recipe.time} min</p>
+    `;
+
+    container.appendChild(card); //append card
+    });
+};
+
+window.addEventListener('DOMContentLoaded', loadRecipies);
