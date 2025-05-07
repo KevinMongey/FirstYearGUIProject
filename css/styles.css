@@ -1,5 +1,6 @@
 /* Basic Styles */
 body {
+    text-align: center;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -8,7 +9,6 @@ body {
   
   h1 {
     color: black;
-    text-align: center;
   }
   
   p {
