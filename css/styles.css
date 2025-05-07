@@ -1,32 +1,52 @@
+<!-- styles -->
 
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #FAF4E5;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    color: #A3B18A;
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  p {
-    color: #555555;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  button {
-    color: #E94E2E;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #E94E2E;
-  }
-  
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #FAF4E5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #A3B18A;
+  text-align: center;
+  font-size: 20px;
+}
+
+p {
+  color: #555555;
+  padding: 10px;
+  font-size: 20px;
+}
+
+button {
+  color: #E94E2E;
+  border: none;
+  padding: 10px 20px;
+  font-size: 10px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #E94E2E;
+  color: black;
+}
+
+/* Navbar styles */
+nav ol {
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center;
+}
+
+nav ol li {
+  margin: 0 10px;
+}
+
+nav ol li a {
+  color: black;
+}
