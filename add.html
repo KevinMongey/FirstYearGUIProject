@@ -3,17 +3,23 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/formstyle.css">
         <script src="js/scripts.js"></script>
         <title></title>
     </head>
     <!--nav bar-->
-    <header></header>
+    <header>  <nav>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="add.html">Add Recipe</a></li>
+        </ol>
+    </nav></header>
 
     <!--Main content-->
     <body>
         <center>
             <h1>Add a New Recipe</h1>
-
             <br>
 
             <form id="newRecipe">
@@ -27,7 +33,7 @@
 
                 <br><br>
 
-                <label for="steps">Preperation Steps:</label><br>
+                <label for="steps">Preparation Steps:</label><br>
                 <textarea id="steps" rows="5" required></textarea>
 
                 <br><br>
