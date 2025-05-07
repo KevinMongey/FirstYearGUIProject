@@ -102,3 +102,10 @@ nav ol li a:active{
   display: none;
 }
 
+.search-wrapper input[type="search"] {
+  padding: 15px;
+  font-size: 14px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
