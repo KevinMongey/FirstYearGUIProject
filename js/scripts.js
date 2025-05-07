@@ -72,3 +72,15 @@ function loadRecipies() {
 };
 
 window.addEventListener('DOMContentLoaded', loadRecipies);
+
+// FOR SEARCH BAR IN browse.html
+const searchInput = document.querySelector("[data-search]")
+//constantly scan for inputs in search similar to the "live calculator" we made in class
+searchInput.addEventListener("input", (e) => {
+    const value = e.target.value.toLowerCase();
+    //for loop to check if name matches input
+    recipes.forEach(recipe => {
+        let isMatch = recipe.name.toLowerCase().includes(value)
+        recipe.classList.toggle("hide", !isMatch)
+    })
+});
